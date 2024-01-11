@@ -1,5 +1,6 @@
 package com.mywish.mykidsstory.Fragment.TheThreeLittlePigs
 
+import CustomMediaPlayer
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -15,6 +16,8 @@ import com.nitish.typewriterview.TypeWriterView
 class LittlePigsFragment5 : Fragment() {
 
     private lateinit var fragmentLittlePigs5Binding:FragmentLittlePigs5Binding
+    private lateinit var mediaPlayer: CustomMediaPlayer
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -23,6 +26,9 @@ class LittlePigsFragment5 : Fragment() {
 
         val typeWriterView: TypeWriterView = fragmentLittlePigs5Binding.typeWriterView
         typeWriterView.animateText(getString(R.string.the_little_three_pigs5))
+
+        mediaPlayer = CustomMediaPlayer(requireContext())
+        onPlayButtonClick()
 
         typeWriterView.setOnAnimationChangeListener {
             replaceWithFragment()
@@ -37,5 +43,48 @@ class LittlePigsFragment5 : Fragment() {
         ft.replace(R.id.fragmentContainer,LittlePigsFragment6() , "NewFragmentTag")
         ft.commit()
     }
+
+    override fun onStart() {
+        super.onStart()
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Resume playback when the activity is resumed
+        mediaPlayer.resume()
+
+    }
+
+    override fun onPause() {
+        super.onPause()
+        // Pause playback when the activity is paused
+        mediaPlayer.pause()
+
+    }
+
+    override fun onStop() {
+        super.onStop()
+        // Stop playback when the activity is stopped
+        mediaPlayer.stop()
+
+    }
+
+    override fun onDestroy() {
+        // Release the resources when the activity is destroyed
+        mediaPlayer.release()
+
+        super.onDestroy()
+    }
+
+    fun onPlayButtonClick() {
+        // Replace R.raw.intheworld with the actual resource ID of your audio file
+        val resourceId = R.raw.the_three_little_pigs5
+        // Set the data source
+        mediaPlayer.setDataSource(resourceId)
+        // Start playing
+        mediaPlayer.play()
+    }
+
 
 }

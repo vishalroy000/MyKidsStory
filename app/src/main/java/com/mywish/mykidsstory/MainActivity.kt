@@ -1,40 +1,30 @@
 package com.mywish.mykidsstory
 
+import CustomMediaPlayer
 import android.annotation.SuppressLint
-import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Handler
-import android.os.Looper
+import android.service.controls.ControlsProviderService.TAG
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.ProgressBar
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import androidx.viewpager2.adapter.FragmentStateAdapter
-import androidx.viewpager2.widget.ViewPager2
-import com.mywish.mykidsstory.Fragment.StoryGoodNight.GoodNIghtFragment2
-import com.mywish.mykidsstory.Fragment.StoryGoodNight.GoodNightFragment1
-import com.mywish.mykidsstory.Fragment.StoryGoodNight.GoodNightFragment10
-import com.mywish.mykidsstory.Fragment.StoryGoodNight.GoodNightFragment11
-import com.mywish.mykidsstory.Fragment.StoryGoodNight.GoodNightFragment12
-import com.mywish.mykidsstory.Fragment.StoryGoodNight.GoodNightFragment3
-import com.mywish.mykidsstory.Fragment.StoryGoodNight.GoodNightFragment4
-import com.mywish.mykidsstory.Fragment.StoryGoodNight.GoodNightFragment5
-import com.mywish.mykidsstory.Fragment.StoryGoodNight.GoodNightFragment6
-import com.mywish.mykidsstory.Fragment.StoryGoodNight.GoodNightFragment7
-import com.mywish.mykidsstory.Fragment.StoryGoodNight.GoodNightFragment8
-import com.mywish.mykidsstory.Fragment.StoryGoodNight.GoodNightFragment9
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import java.io.IOException
+
 
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var mediaPlayer: MediaPlayer
     private lateinit var playButton: Button
     private lateinit var progressBar: ProgressBar
+
+
+    private lateinit var mediaPlayer: CustomMediaPlayer
+
+
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,56 +34,119 @@ class MainActivity : AppCompatActivity() {
 
         progressBar.visibility=View.GONE
 
-        playButton.setOnClickListener {
-            playAudioFromUrl("https://s5-6.ttsmaker-file.com/file/2024-01-11-014352_193305.mp3")
 
-        }
+        val textView: TextView = findViewById(R.id.textView)
+        val inputString = getString(R.string.good_night_page1)
+        val animationSpeed = 95
 
+//        createTypeWriterAnimation(textView, inputString, speed = animationSpeed.toLong())
+
+
+        mediaPlayer = CustomMediaPlayer(this)
+        onPlayButtonClick()
+        mediaPlayer.setPlaybackSpeed(0.49f) // Adjust the speed as needed
 
 
     }
 
-
-    private fun playAudioFromUrl(url: String) {
-        progressBar.visibility = ProgressBar.VISIBLE
-
-        mediaPlayer = MediaPlayer().apply {
-            setOnPreparedListener { mp ->
-                progressBar.visibility = ProgressBar.GONE
-                mp.start()
-            }
-            setOnCompletionListener {
-                progressBar.visibility = ProgressBar.GONE
-            }
-            setOnErrorListener { mp, what, extra ->
-                progressBar.visibility = ProgressBar.GONE
-                false
-            }
-        }
-
-        CoroutineScope(Dispatchers.IO).launch {
-            try {
-                mediaPlayer.setDataSource(url)
-                mediaPlayer.prepareAsync()
-            } catch (e: IOException) {
-                showError()
-            }
-        }
+    fun onPlayButtonClick() {
+        // Replace R.raw.intheworld with the actual resource ID of your audio file
+        val resourceId = R.raw.in_the_great_green
+        // Set the data source
+        mediaPlayer.setDataSource(resourceId)
+        // Start playing
+        mediaPlayer.play()
     }
 
 
-    private fun showError() {
-        // Handle error logic here, like showing an error message.
-        // For simplicity, I'm just hiding the progress bar.
-        progressBar.visibility = ProgressBar.GONE
+
+
+
+
+
+
+    override fun onStart() {
+        super.onStart()
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Resume playback when the activity is resumed
+        mediaPlayer.resume()
+
+    }
+
+    override fun onPause() {
+        super.onPause()
+        // Pause playback when the activity is paused
+        mediaPlayer.pause()
+
+    }
+
+    override fun onStop() {
+        super.onStop()
+        // Stop playback when the activity is stopped
+        mediaPlayer.stop()
+
     }
 
     override fun onDestroy() {
-        super.onDestroy()
+        // Release the resources when the activity is destroyed
         mediaPlayer.release()
-    }
-}
 
+        super.onDestroy()
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+    }
+
+    fun toast(message:String){
+        Toast.makeText(applicationContext, "$message", Toast.LENGTH_SHORT).show()
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    fun createTypeWriterAnimation(
+        textView: TextView,
+        inputString: String,
+        speed: Long = 100,
+        delay: Long = 0
+
+    ) {
+        textView.text = ""
+        val handler = Handler()
+
+        val runnable = object : Runnable {
+            var index = 0
+            override fun run() {
+
+                if (index < inputString.length) {
+                    textView.text = "${textView.text}${inputString[index]}"
+                    index++
+                    handler.postDelayed(this, speed)
+                }
+                else{
+                    toast("text finished")
+                }
+
+            }
+        }
+
+        handler.postDelayed(runnable, delay)
+    }
+
+}
 
 
 
