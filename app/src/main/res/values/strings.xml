@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">My Kids Story</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <string name="good_night_page1">In the great green room There was a telephone And a red balloon And a picture of the cow jumping over the moon </string>
+    <string name="good_night_page2">And there were three little bears sitting on chairs And two little kittens And a pair of mittens</string>
+    <string name="good_night_page3">And a little toy house And a young mouse</string>
+    <string name="good_night_page4">And a comb and a brush and a bowl full of mush And a quiet old lady who was whispering “hush”</string>
+    <string name="good_night_page5">Goodnight room Goodnight moon Goodnight cow jumping over the moon</string>
+    <string name="good_night_page6">Goodnight light And the red balloon</string>
+    <string name="good_night_page7">Goodnight bears Goodnight chairs Goodnight kittens And goodnight mittens</string>
+    <string name="good_night_page8">Goodnight clocks And goodnight socks</string>
+    <string name="good_night_page9">Goodnight little house And goodnight mouse</string>
+    <string name="good_night_page10">Goodnight comb And goodnight brush Goodnight nobody Goodnight mush And goodnight to the old lady whispering “hush”</string>
+    <string name="good_night_page11">Goodnight stars Goodnight air Good night noises everywhere</string>
+    <string name="good_night_page12">Goodnight stars Goodnight air Good night noises everywhere</string>
+
+
+    <string name="the_little_three_pigs1">Once upon a time there was an old mother pig who had three little pigs and not enough food to feed them. So when they were old enough, she sent them out into the world to seek their fortunes</string>
+    <string name="audio_link_the_little_three_pigs1">https://s5-6.ttsmaker-file.com/file/2024-01-11-022313_153199.mp3</string>
+    <string name="the_little_three_pigs2">The ﬁrst little pig was very lazy. He didn\'t want to work at all and he built his house out of straw</string>
+    <string name="audio_link_the_little_three_pigs2">https://s5-5.ttsmaker-file.com/file/2024-01-11-022522_143951.mp3</string>
+    <string name="the_little_three_pigs3">The second little pig worked a little bit harder but he was somewhat lazy too and he built his house out of sticks. Then, they sang and danced and played together the rest of the day</string>
+    <string name="audio_link_the_little_three_pigs3">https://s5.ttsmaker-file.com/file/2024-01-11-022621_155201.mp3</string>
+    <string name="the_little_three_pigs4">The third little pig worked hard all day and built his house with bricks. It was a sturdy house complete with a ﬁne ﬁreplace and chimney. It looked like it could withstand the strongest winds</string>
+    <string name="audio_link_the_little_three_pigs4">https://s5-9.ttsmaker-file.com/file/2024-01-11-022750_105741.mp3</string>
+    <string name="the_little_three_pigs5">The next day, a wolf happened to pass by the lane where the three little pigs lived; and he saw the straw house, and he smelled the pig inside. He thought the pig would make a mighty ﬁne meal and his mouth began to water.</string>
+    <string name="audio_link_the_little_three_pigs5">https://s5-4.ttsmaker-file.com/file/2024-01-11-022913_125651.mp3</string>
+    <string name="the_little_three_pigs6">So he knocked on the door and said: Little pig! Little pig! Let me in! Let me in! But the little pig saw the wolf\'s big paws through the keyhole, so he answered back: No! No! No! Not by the hairs on my chinny chin chin!</string>
+    <string name="the_little_three_pigs7">Then the wolf showed his teeth and said: Then I\'ll huff and I\'ll puff and I\'ll blow your house down.So he huffed and he puffed and he blew the house down! The wolf opened his jaws very wide and bit down as hard as he could, but the ﬁrst little pig escaped and ran away to hide with the second little pig</string>
+    <string name="the_little_three_pigs8">The wolf continued down the lane and he passed by the second house made of sticks; and he saw the house, and he smelled the pigs inside, and his mouth began to water as he thought about the ﬁne dinner they would make.</string>
+    <string name="the_little_three_pigs9">So he knocked on the door and said: Little pigs! Little pigs! Let me in! Let me in! But the little pigs saw the wolf\'s pointy ears through the keyhole, so they answered back: No! No! No! Not by the hairs on our chinny chin chin!</string>
+    <string name="the_little_three_pigs10">So the wolf showed his teeth and said: Then I\'ll huff and I\'ll puff and I\'ll blow your house down!So he huffed and he puffed and he blew the house down! The wolf was greedy and he tried to catch both pigs at once, but he was too greedy and got neither! His big jaws clamped down on nothing but air and the two little pigs scrambled away as fast as their little hooves would carry them.</string>
+    <string name="the_little_three_pigs11">The wolf chased them down the lane and he almost caught them. But they made it to the brick house and slammed the door closed before the wolf could catch them. </string>
+    <string name="the_little_three_pigs12">The three little pigs they were very frightened, they knew the wolf wanted to eat them. And that was very, very true. The wolf hadn\'t eaten all day and he had worked up a large appetite chasing the pigs around and now he could smell all three of them inside and he knew that the three little pigs would make a lovely feast.</string>
+    <string name="the_little_three_pigs13">So the wolf knocked on the door and said: Little pigs! Little pigs! Let me in! Let me in! But the little pigs saw the wolf\'s narrow eyes through the keyhole, so they answered back: No! No! No! Not by the hairs on our chinny chin chin!</string>
+    <string name="the_little_three_pigs14">So the wolf showed his teeth and said: Then I\'ll huff and I\'ll puff and I\'ll blow your house down. Well! he huffed and he puffed. He puffed and he huffed. And he huffed, huffed, and he puffed, puffed; but he could not blow the house down.</string>
+    <string name="the_little_three_pigs15">At last, he was so out of breath that he couldn\'t huff and he couldn\'t puff anymore. So he stopped to rest and thought a bit.</string>
+    <string name="the_little_three_pigs16">But this was too much. The wolf danced about with rage and swore he would come down the chimney and eat up the little pig for his supper. </string>
+    <string name="the_little_three_pigs17">But while he was climbing on to the roof the little pig made up a blazing ﬁre and put on a big pot full of water to boil. </string>
+    <string name="the_little_three_pigs18">Then, just as the wolf was coming down the chimney, the little piggy pulled off the lid, and plop! in fell the wolf into the scalding water.</string>
+    <string name="the_little_three_pigs19">So the little piggy put on the cover again, boiled the wolf up, and the three little pigs ate him for supper.</string>
+
+    <string name="audio_link_the_little_three_pigs6">https://s5-5.ttsmaker-file.com/file/2024-01-11-023123_109416.mp3</string>
+    <string name="audio_link_the_little_three_pigs7">https://s5-9.ttsmaker-file.com/file/2024-01-11-023235_146993.mp3</string>
+    <string name="audio_link_the_little_three_pigs8">https://s5-10.ttsmaker-file.com/file/2024-01-11-023324_196260.mp3</string>
+    <string name="audio_link_the_little_three_pigs9">https://s5-2.ttsmaker-file.com/file/2024-01-11-023408_187956.mp3</string>
+    <string name="audio_link_the_little_three_pigs10">https://s5.ttsmaker-file.com/file/2024-01-11-023523_195336.mp3</string>
+    <string name="audio_link_the_little_three_pigs11">https://s5-10.ttsmaker-file.com/file/2024-01-11-023601_178543.mp3</string>
+    <string name="audio_link_the_little_three_pigs12">https://s5.ttsmaker-file.com/file/2024-01-11-023636_154832.mp3</string>
+    <string name="audio_link_the_little_three_pigs13">https://s5-5.ttsmaker-file.com/file/2024-01-11-023718_151033.mp3</string>
+    <string name="audio_link_the_little_three_pigs14">https://s5-8.ttsmaker-file.com/file/2024-01-11-023813_126910.mp3</string>
+    <string name="audio_link_the_little_three_pigs15">https://s5-3.ttsmaker-file.com/file/2024-01-11-023854_142461.mp3</string>
+    <string name="audio_link_the_little_three_pigs16">https://s5.ttsmaker-file.com/file/2024-01-11-023930_166177.mp3</string>
+    <string name="audio_link_the_little_three_pigs17">https://s5-7.ttsmaker-file.com/file/2024-01-11-024003_157303.mp3</string>
+    <string name="audio_link_the_little_three_pigs18">https://s5-8.ttsmaker-file.com/file/2024-01-11-024039_153581.mp3</string>
+    <string name="audio_link_the_little_three_pigs19">https://s5-9.ttsmaker-file.com/file/2024-01-11-024121_103456.mp3</string>
+
+
+
+
+</resources>
