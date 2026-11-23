@@ -8,7 +8,12 @@
     <style name="Theme.MyKidsStory" parent="Base.Theme.MyKidsStory" />
 
     <style name="ThemeOverlay.MyKidsStory.FullscreenContainer" parent="">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
         <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
         <item name="fullscreenTextColor">@color/light_blue_A200</item>
     </style>
+
+
 </resources>

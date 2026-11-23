@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -18,7 +17,7 @@
         android:theme="@style/Theme.MyKidsStory"
         tools:targetApi="31">
         <activity
-            android:name=".StoryViewActivity"
+            android:name=".OnBoarding.OnBoardingActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,17 +28,33 @@
 
         </activity>
         <activity
+            android:name=".StoryViewActivity"
+            android:exported="true"></activity>
+        <activity
             android:name=".StoryViewerActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Test.TestActivity"
-            android:exported="true"></activity>
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
 
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8634900064580620~4945536582" />
     </application>
 
 </manifest>

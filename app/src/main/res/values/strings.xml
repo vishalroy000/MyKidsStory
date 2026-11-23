@@ -1,21 +1,7 @@
 <resources>
     <string name="app_name">My Kids Story</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="good_night_page1">In the great green room There was a telephone And a red balloon And a picture of the cow jumping over the moon </string>
-    <string name="good_night_page2">And there were three little bears sitting on chairs And two little kittens And a pair of mittens</string>
-    <string name="good_night_page3">And a little toy house And a young mouse</string>
-    <string name="good_night_page4">And a comb and a brush and a bowl full of mush And a quiet old lady who was whispering “hush”</string>
-    <string name="good_night_page5">Goodnight room Goodnight moon Goodnight cow jumping over the moon</string>
-    <string name="good_night_page6">Goodnight light And the red balloon</string>
-    <string name="good_night_page7">Goodnight bears Goodnight chairs Goodnight kittens And goodnight mittens</string>
-    <string name="good_night_page8">Goodnight clocks And goodnight socks</string>
-    <string name="good_night_page9">Goodnight little house And goodnight mouse</string>
-    <string name="good_night_page10">Goodnight comb And goodnight brush Goodnight nobody Goodnight mush And goodnight to the old lady whispering “hush”</string>
-    <string name="good_night_page11">Goodnight stars Goodnight air Good night noises everywhere</string>
-    <string name="good_night_page12">Goodnight stars Goodnight air Good night noises everywhere</string>
 
 
     <string name="the_little_three_pigs1">Once upon a time there was an old mother pig who had three little pigs and not enough food to feed them. So when they were old enough, she sent them out into the world to seek their fortunes</string>
@@ -38,30 +24,15 @@
     <string name="the_little_three_pigs18">Then, just as the wolf was coming down the chimney, the little piggy pulled off the lid, and plop! in fell the wolf into the scalding water.</string>
     <string name="the_little_three_pigs19">So the little piggy put on the cover again, boiled the wolf up, and the three little pigs ate him for supper.</string>
 
+    <string name="title_onboarding_1">Play Game &amp;\nLearn Numbers</string>
+    <string name="description_onboarding_1">description 1</string>
+    <string name="title_onboarding_2">Play Game &amp;\nLearn Alphabets</string>
+    <string name="description_onboarding_2">description 2</string>
+    <string name="description_onboarding_3">description 3</string>
+    <string name="title_onboarding_3">Play Game &amp;\nWin Rewards</string>
 
-
-    <string name="audio_link_the_little_three_pigs1"></string>
-    <string name="audio_link_the_little_three_pigs2"></string>
-    <string name="audio_link_the_little_three_pigs3"></string>
-    <string name="audio_link_the_little_three_pigs4"></string>
-    <string name="audio_link_the_little_three_pigs5"></string>
-
-    <string name="audio_link_the_little_three_pigs6">https://s5-5.ttsmaker-file.com/file/2024-01-11-023123_109416.mp3</string>
-    <string name="audio_link_the_little_three_pigs7">https://s5-9.ttsmaker-file.com/file/2024-01-11-023235_146993.mp3</string>
-    <string name="audio_link_the_little_three_pigs8">https://s5-10.ttsmaker-file.com/file/2024-01-11-023324_196260.mp3</string>
-    <string name="audio_link_the_little_three_pigs9">https://s5-2.ttsmaker-file.com/file/2024-01-11-023408_187956.mp3</string>
-    <string name="audio_link_the_little_three_pigs10">https://s5.ttsmaker-file.com/file/2024-01-11-023523_195336.mp3</string>
-    <string name="audio_link_the_little_three_pigs11">https://s5-10.ttsmaker-file.com/file/2024-01-11-023601_178543.mp3</string>
-    <string name="audio_link_the_little_three_pigs12">https://s5.ttsmaker-file.com/file/2024-01-11-023636_154832.mp3</string>
-    <string name="audio_link_the_little_three_pigs13">https://s5-5.ttsmaker-file.com/file/2024-01-11-023718_151033.mp3</string>
-    <string name="audio_link_the_little_three_pigs14">https://s5-8.ttsmaker-file.com/file/2024-01-11-023813_126910.mp3</string>
-    <string name="audio_link_the_little_three_pigs15">https://s5-3.ttsmaker-file.com/file/2024-01-11-023854_142461.mp3</string>
-    <string name="audio_link_the_little_three_pigs16">https://s5.ttsmaker-file.com/file/2024-01-11-023930_166177.mp3</string>
-    <string name="audio_link_the_little_three_pigs17">https://s5-7.ttsmaker-file.com/file/2024-01-11-024003_157303.mp3</string>
-    <string name="audio_link_the_little_three_pigs18">https://s5-8.ttsmaker-file.com/file/2024-01-11-024039_153581.mp3</string>
-    <string name="audio_link_the_little_three_pigs19">https://s5-9.ttsmaker-file.com/file/2024-01-11-024121_103456.mp3</string>
-
-
+    <string name="ads_id_interstitial">"ca-app-pub-3940256099942544/1033173712"</string>
+    <string name="ads_id_Banner">"banner id here"</string>
 
 
 </resources>

@@ -1,19 +1,15 @@
 package com.mywish.mykidsstory.Fragment.TheThreeLittlePigs
 
 import CustomMediaPlayer
-import android.content.Intent
-import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
 import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RelativeLayout
+import android.view.WindowManager
 import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import com.mywish.mykidsstory.Fragment.BaseFragment
 import com.mywish.mykidsstory.R
 import com.mywish.mykidsstory.databinding.FragmentLittlePigsBinding
 
@@ -32,6 +28,9 @@ class LittlePigsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         fragmentLittlePigsBinding=FragmentLittlePigsBinding.inflate(inflater,container,false)
+
+
+        activity?.window?.apply { addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN) }
 
 
         Handler().postDelayed({ replaceWithFragment() }, pauseTime)
@@ -103,9 +102,7 @@ class LittlePigsFragment : Fragment() {
         super.onDestroy()
     }
 
-
-
-    fun toast(message:String){
+   private fun toast(message:String){
         Toast.makeText(requireContext(), "$message", Toast.LENGTH_SHORT).show()
     }
 

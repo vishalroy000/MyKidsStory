@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragment.TheThreeLittlePigs.LittlePigsFragment19">
 
     <ImageView
@@ -11,16 +12,75 @@
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
         android:src="@drawable/the_little_three_pigs19" />
+
     <com.nitish.typewriterview.TypeWriterView
         android:id="@+id/typeWriterView"
         android:layout_width="match_parent"
-        android:layout_margin="30dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/rounded_square_white_background"
         android:padding="10dp"
         android:textColor="@color/black"
         android:textSize="24sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:visibility="gone"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/next" />
+
+    <ImageView
+        android:id="@+id/finger_tap"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/finger_tap"
+        android:rotation="65" />
+
+    <TextView
+        android:id="@+id/story_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:visibility="gone"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_square_white_background"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Story Finish"
+        android:textColor="@color/black"
+        android:textSize="48sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/animation_view"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/konfetti"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"/>
 
 
-</FrameLayout>
+
+</RelativeLayout>

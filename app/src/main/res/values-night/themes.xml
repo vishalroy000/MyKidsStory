@@ -6,7 +6,11 @@
     </style>
 
     <style name="ThemeOverlay.MyKidsStory.FullscreenContainer" parent="">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
         <item name="fullscreenBackgroundColor">@color/light_blue_900</item>
         <item name="fullscreenTextColor">@color/light_blue_A400</item>
     </style>
+
 </resources>

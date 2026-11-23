@@ -2,12 +2,15 @@ import android.content.Context
 import android.media.MediaPlayer
 import android.media.PlaybackParams
 import android.os.Build
+import android.view.View
+import android.widget.Toast
 import com.mywish.mykidsstory.R
 
 class CustomMediaPlayer(private val context: Context) {
 
     private var mediaPlayer: MediaPlayer = MediaPlayer()
     private var isPaused: Boolean = true
+    private var onCompletionListener: MediaPlayer.OnCompletionListener? = null
 
     fun setDataSource(resourceId: Int) {
         try {
@@ -19,6 +22,13 @@ class CustomMediaPlayer(private val context: Context) {
             e.printStackTrace()
         }
     }
+
+
+    fun setOnCompletionListener(listener: MediaPlayer.OnCompletionListener) {
+        onCompletionListener = listener
+        mediaPlayer.setOnCompletionListener(listener)
+    }
+
 
     fun play() {
         if (!mediaPlayer.isPlaying) {
@@ -103,5 +113,9 @@ class CustomMediaPlayer(private val context: Context) {
         mediaPlayer.release()
     }
 
+
+    fun isPlaying(): Boolean {
+        return mediaPlayer.isPlaying
+    }
 
 }

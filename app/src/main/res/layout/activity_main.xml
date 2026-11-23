@@ -1,35 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:columnCount="2"
+    android:background="@drawable/onboarding_bg"
+    android:rowCount="4"
+    android:layout_gravity="center"
+    android:padding="16dp"
+    android:columnOrderPreserved="false">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/playSound"
-        android:text="Play"/>
+    <ImageView
+        android:id="@+id/btnTheThreeLittilePigs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:src="@drawable/story_three_little_pigs"
+        android:scaleType="centerCrop"
+        android:layout_margin="4dp"/>
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:visibility="gone"
-        android:layout_centerInParent="true"
-        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/btnStoryGoldilocksAndThreeBears"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@drawable/story_goldilocks_and_three_bears"
+        android:src="@drawable/lock_story_bg"
+        android:scaleType="centerCrop"
+        android:layout_margin="4dp"/>
+    <ImageView
+        android:id="@+id/btnStoryGoodNight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:src="@drawable/lock_story_bg"
+        android:background="@drawable/story_good_night"
+        android:scaleType="centerCrop"
+        android:layout_margin="4dp"/>
+    <ImageView
+        android:id="@+id/btnStoryTheCountryMaind"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@drawable/story_the_country_maind"
+        android:src="@drawable/lock_story_bg"
+        android:scaleType="centerCrop"
+        android:layout_margin="4dp"/>
+    <ImageView
+        android:id="@+id/btnStoryTheGoldeEgg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@drawable/story_the_golde_egg"
+        android:src="@drawable/lock_story_bg"
+        android:scaleType="centerCrop"
+        android:layout_margin="4dp"/>
+    <ImageView
+        android:id="@+id/btnStoryTheShepherdBoyAndTheWolf"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@drawable/story_the_shepherd_boy_and_the_wolf"
+        android:src="@drawable/lock_story_bg"
+        android:scaleType="centerCrop"
+        android:layout_margin="4dp"/>
+    <ImageView
+        android:id="@+id/btnStoryCinderalla"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@drawable/story_cinderalla"
+        android:src="@drawable/lock_story_bg"
+        android:scaleType="centerCrop"
+        android:layout_margin="4dp"/>
+    <ImageView
+        android:id="@+id/btnTheMiserAndGold"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:background="@drawable/the_miser_and_gold"
+        android:src="@drawable/lock_story_bg"
+        android:scaleType="centerCrop"
+        android:layout_margin="4dp"/>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="32sp"
-        android:gravity="center"
-        android:layout_centerInParent="true"
-        android:textColor="#000000"
-        android:layout_gravity="center"
-        android:padding="16dp"/>
+    <!-- Repeat the above two lines for the remaining image views -->
 
-
-</RelativeLayout>
+</GridLayout>

@@ -1,22 +1,20 @@
 package com.mywish.mykidsstory
 
-import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ProgressBar
+import android.util.Log
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
+import com.google.android.gms.ads.rewarded.RewardedAd
 import com.mywish.mykidsstory.Fragment.TheThreeLittlePigs.LittlePigsFragment
-import com.mywish.mykidsstory.Fragment.TheThreeLittlePigs.LittlePigsFragment1
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import java.io.IOException
 
 class StoryViewActivity : AppCompatActivity() {
-
-
 
 
     private lateinit var currentFragment: Fragment
@@ -24,9 +22,7 @@ class StoryViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_story_view)
-
-
-        // Initialize with the default fragment (LittlePigsFragment)
+        
         currentFragment = LittlePigsFragment()
 
         supportFragmentManager.commit {
@@ -34,33 +30,6 @@ class StoryViewActivity : AppCompatActivity() {
             addToBackStack(null) // Optional, if you want to add to back stack
         }
 
-        val replaceButton = findViewById<Button>(R.id.replaceButton)
-
-
-        replaceButton.setOnClickListener {
-            replaceFragment()
-        }
-
-
-
-
     }
-
-
-
-    private fun replaceFragment() {
-        // Example: Replace with LittlePigsFragment1
-        val newFragment = LittlePigsFragment1()
-
-        supportFragmentManager.commit {
-            replace(R.id.fragmentContainer, newFragment)
-            addToBackStack(null) // Optional, if you want to add to back stack
-        }
-
-        // Update the current fragment reference
-        currentFragment = newFragment
-    }
-
-
 
 }

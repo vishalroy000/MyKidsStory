@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
+import com.mywish.mykidsstory.Fragment.TheThreeLittlePigs.LittlePigsFragment2
+import com.mywish.mykidsstory.InterstitialAdManager
 import com.mywish.mykidsstory.R
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -20,7 +23,6 @@ open class BaseFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Assuming you have a ProgressBar in the layout with the ID progressBar
-        progressBar = view.findViewById(R.id.progressBar)
     }
 
     protected fun playAudioFromUrl(url: String) {
@@ -48,6 +50,16 @@ open class BaseFragment : Fragment() {
                 showError()
             }
         }
+    }
+
+
+     fun replaceWithFragment(layout_id:Int,fragment: Fragment) {
+        // Replace FragmentA with FragmentB
+        InterstitialAdManager.loadInterstitialAd(requireContext(), "ca-app-pub-8634900064580620/9230714495")
+
+        val ft: FragmentTransaction = requireFragmentManager().beginTransaction()
+        ft.replace(layout_id, fragment , "NewFragmentTag")
+        ft.commit()
     }
 
     protected fun showError() {

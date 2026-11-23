@@ -2,12 +2,14 @@ package com.mywish.mykidsstory.Fragment.StoryGoodNight
 
 
 import android.graphics.drawable.AnimationDrawable
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.mywish.mykidsstory.R
 import com.mywish.mykidsstory.databinding.FragmentGoodNIght2Binding
@@ -50,7 +52,15 @@ class GoodNIghtFragment2 : Fragment()  {
     }
 
 
+    private fun onPlayButtonClick(audioResId: Int) {
+        val mediaPlayer = MediaPlayer.create(requireContext(), audioResId)
+        mediaPlayer.start()
+        mediaPlayer.setOnCompletionListener {
+            // Show a toast message when the audio finishes playing
+            Toast.makeText(requireContext(), "Audio Finished", Toast.LENGTH_SHORT).show()
+        }
 
+    }
 
 
 
